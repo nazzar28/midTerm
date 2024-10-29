@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.midterm.RentalCarController">
+    <children>
+        <Label fx:id="topLabel" text="Student ID: 230107001 | Full Name: Talantbekov Nazarbek" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+        <Label fx:id="infoLabel" text="Please enter the rental period in days and membership duration in years.\nSelect the car type and click 'Calculate Rental Fee'." wrapText="true" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.topAnchor="30" />
+
+        <Label text="Rental Period (days):" AnchorPane.topAnchor="80" />
+        <TextField fx:id="rentalPeriodField" AnchorPane.topAnchor="80" AnchorPane.leftAnchor="150" />
+
+        <Label text="Membership Duration (years):" AnchorPane.topAnchor="120" />
+        <TextField fx:id="membershipDurationField" AnchorPane.topAnchor="120" AnchorPane.leftAnchor="150" />
+
+        <Label text="Car Type:" AnchorPane.topAnchor="160" />
+        <VBox spacing="5" AnchorPane.topAnchor="160" AnchorPane.leftAnchor="150">
+            <RadioButton fx:id="economyRadio" text="Economy" />
+            <RadioButton fx:id="standardRadio" text="Standard" />
+            <RadioButton fx:id="premiumRadio" text="Premium" />
+        </VBox>
+
+        <Button fx:id="calculateButton" text="Calculate Rental Fee" AnchorPane.topAnchor="210" AnchorPane.leftAnchor="150" />
+
+        <Label fx:id="resultLabel" AnchorPane.topAnchor="240" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" wrapText="true" />
+    </children>
+</AnchorPane>
